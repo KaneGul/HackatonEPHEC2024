@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Compte</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="parametre.css">
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="back-button">
+      <span>&larr;</span>
+    </div>
+    <h1>Compte</h1>
+  </header>
+
+  <!-- Section pour afficher les informations utilisateur -->
+  <div class="profile-section">
+    <div class="profile-info">
+      <div class="profile-picture">
+        <img id="avatar" src="img/default-avatar.png" alt="Profile Picture">
+      </div>
+      <div class="profile-text">
+        <p id="user-name" class="profile-name">Nom Prénom</p>
+        <p id="user-email" class="profile-email">Adresse email</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section pour les options -->
+  <div class="option-item">
+    <span>Vibration</span>
+    <div class="toggle-button">
+      <input type="checkbox" id="vibrationSwitch" checked>
+      <label for="vibrationSwitch"></label>
+    </div>
+  </div>
+
+  <!-- Bouton de déconnexion -->
+  <div class="logout-button">
+    <button>Se déconnecter</button>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="parametre.js"></script>
+
+</body>
+
+</html>

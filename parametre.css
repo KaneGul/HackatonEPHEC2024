@@ -1,0 +1,156 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 300px;
+  background-color: #ffa857;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.back-button {
+  position: absolute;
+  left: 0;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.profile-picture img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.profile-text {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.profile-name {
+  font-weight: bold;
+  color: #333;
+}
+
+.profile-email {
+  color: #555;
+}
+
+.options {
+  margin-top: 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+.option-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 250px;
+}
+
+.option-item:nth-child(2) {
+  margin-top: 200px;
+}
+
+.toggle-button {
+  position: relative;
+}
+
+.toggle-button input {
+  display: none;
+}
+
+.toggle-button label {
+  width: 50px;
+  height: 25px;
+  background-color: #ccc;
+  display: block;
+  border-radius: 25px;
+  position: relative;
+  cursor: pointer;
+}
+
+.toggle-button label:after {
+  content: '';
+  width: 23px;
+  height: 23px;
+  background-color: white;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.toggle-button input:checked + label {
+  background-color: #4caf50;
+}
+
+.toggle-button input:checked + label:after {
+  left: calc(100% - 24px);
+}
+
+.logout-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.logout-button button {
+  background-color: #ff3b3b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.logout-button button:hover {
+  background-color: #ff5555;
+}
+
+
+
